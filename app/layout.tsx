@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 import styles from "@/lib/styles";
 import "./globals.css";
 
@@ -94,6 +95,16 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" type="image/png" href="/favicon.png" />
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-71FHN93JKM" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-71FHN93JKM');`,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -121,6 +132,9 @@ export default function RootLayout({
               </div>
             </div>
           </div>
+
+          {/* Floating WhatsApp Button */}
+          <WhatsAppFloat />
         </div>
       </body>
     </html>

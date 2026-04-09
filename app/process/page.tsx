@@ -73,7 +73,7 @@ const processJsonLd = [
 
 export default function ProcessPage() {
   return (
-    <div className="bg-white">
+    <div className="bg-white min-h-[calc(100vh-80px)]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(processJsonLd) }}

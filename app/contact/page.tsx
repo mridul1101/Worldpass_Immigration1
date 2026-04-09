@@ -35,7 +35,7 @@ const contactJsonLd = {
 
 export default function ContactPage() {
   return (
-    <div className="bg-muted">
+    <div className="bg-muted min-h-[calc(100vh-80px)]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }}

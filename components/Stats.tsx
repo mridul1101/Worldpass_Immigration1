@@ -1,23 +1,28 @@
 import { stats } from "@/lib/constants";
-import styles from "@/lib/styles";
 
 const Stats = () => {
   return (
-    <section className={`${styles.flexCenter} flex-wrap gap-6 py-12`}>
-      {stats.map((stat) => (
-        <div
-          key={stat.id}
-          className="flex flex-col items-center justify-center min-w-[160px] py-6 px-6 bg-white rounded-2xl shadow-sm border border-gray-100"
-        >
-          <div className="text-3xl mb-1">{stat.emoji}</div>
-          <h4 className="font-poppins font-bold text-[38px] leading-[48px] text-dark">
-            {stat.value}
-          </h4>
-          <p className="font-poppins font-normal text-[14px] text-secondary uppercase tracking-widest mt-1 text-center">
-            {stat.title}
-          </p>
-        </div>
-      ))}
+    <section className="w-full bg-dark py-8">
+      <div className="flex flex-wrap items-center justify-center gap-0">
+        {stats.map((stat, i) => (
+          <div
+            key={stat.id}
+            className={`flex items-center gap-3 px-8 sm:px-12 py-4 ${
+              i !== stats.length - 1 ? "border-r border-white/10" : ""
+            }`}
+          >
+            <span className="text-2xl">{stat.emoji}</span>
+            <div>
+              <h4 className="font-poppins font-bold text-[28px] sm:text-[34px] leading-tight text-white">
+                {stat.value}
+              </h4>
+              <p className="font-poppins font-normal text-[11px] sm:text-[12px] text-white/50 uppercase tracking-widest">
+                {stat.title}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };

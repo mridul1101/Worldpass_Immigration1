@@ -55,13 +55,20 @@ export const services = [
     emoji: "💼",
     title: "Work & Employment Visas",
     description:
-      "Take your career global with our professional work visa assistance for skilled professionals, caregivers, and healthcare workers.",
+      "Take your career global with our professional work visa assistance for skilled professionals and healthcare workers.",
     items: [
-      "Work Permits",
-      "LMIA-Based Work Visas",
-      "Job Seeker Visas",
-      "Employer-Sponsored Programs",
-      "Skilled Migration Programs",
+      "Profile Assessment & Eligibility Check",
+      "Work Visa Consultation (Country & Pathway Guidance)",
+      "Resume/CV Building (International Format)",
+      "SOP, Cover Letter & Documentation Support",
+      "Visa Application Filing & Processing",
+      "IELTS / PTE Guidance",
+      "LMIA-Based & Employer-Sponsored Work Permit Guidance (Without Providing Job)",
+      "Open Work Permit & Spouse Visa Processing",
+      "Job Search Guidance (How to Apply, Portals, Strategies)",
+      "Visa Refusal/Reapplication Support",
+      "Pre-Departure Guidance",
+      "Post-Landing Basic Guidance (Settlement Info)",
     ],
     color: "from-indigo-50 to-blue-50",
     border: "border-indigo-200",
@@ -95,7 +102,6 @@ export const services = [
       "Express Entry Programs",
       "Provincial Nominee Programs (PNP)",
       "Family Sponsorship",
-      "Caregiver Pathways",
       "Business & Investment Immigration",
       "Post-Graduate Immigration Pathways",
     ],
@@ -200,6 +206,7 @@ export const countries = [
   { id: "c-8", flag: "🇶🇦", name: "Qatar" },
   { id: "c-9", flag: "🇲🇾", name: "Malaysia" },
   { id: "c-10", flag: "🇸🇦", name: "Saudi Arabia" },
+  { id: "c-11", flag: "🌐", name: "& Many More" },
 ];
 
 export const testimonials = [
@@ -294,6 +301,6 @@ export const socialMedia = [
     id: "social-whatsapp",
     platform: "WhatsApp",
     icon: "💬",
-    link: "https://wa.me/",
+    link: "https://wa.me/918278776068",
   },
 ];
